@@ -1,0 +1,71 @@
+\usepackage{eurosym}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+\setbeamertemplate{navigation symbols}{}
+\setbeamercovered{invisible}
+\usetheme{default}
+\definecolor{ccred}{RGB}{254,128,0} % changed this
+\definecolor{ccyellow}{RGB}{254,128,0} % changed this
+\definecolor{ccblue}{RGB}{0,158,224} % changed this
+
+\setbeamercolor{normal text}{fg=black,bg=white}
+\setbeamercolor{alerted text}{fg=ccblue}
+\setbeamercolor{example text}{fg=ccblue}
+\setbeamercolor{title}{fg=black,bg=ccyellow}
+\setbeamercolor{author in head/foot}{fg=black,bg=ccyellow}
+\setbeamercolor{title in head/foot}{fg=black,bg=ccyellow}
+\setbeamercolor{date in head/foot}{bg=ccyellow,fg=black}
+
+\setbeamercolor{structure}{fg=ccred,bg=black}
+
+\useinnertheme{rounded}
+%\useoutertheme{infolines}
+
+\setbeamertemplate{itemize items}[triangle]
+\setbeamertemplate{enumerate items}[default]
+
+\setbeamercolor{background canvas}{parent=normal text}
+\setbeamercolor{background}{parent=background canvas}
+
+\setbeamercolor{palette primary}{fg=ccyellow,bg=black} % changed this
+\setbeamercolor{palette secondary}{bg=ccyellow,fg=black} % changed this
+\setbeamercolor{palette tertiary}{bg=ccyellow,fg=black} % changed this
+
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor \hspace*{1em}
+    (\insertshortinstitute) \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\setbeamertemplate{frametitle}
+{%
+\vspace{-0.165ex}
+
+\begin{beamercolorbox}[wd=\paperwidth,dp=1ex, ht=4.5ex, sep=0.5ex, colsep*=0pt]{frametitle}%
+    \usebeamerfont{frametitle}   \strut \insertframetitle  \hfill \raisebox{-1.6ex}[0pt][-\ht\strutbox ]{ \includegraphics[scale=0.3]{cc_header.png}}
+    \end{beamercolorbox}%
+ }%
+
+ \AtBeginSection{
+	   \let\insertsectionnumber\relax
+	     \let\sectionname\relax
+	       \frame{\sectionpage}
+       }
+ \AtBeginSubsection{
+	       \let\insertsubsectionnumber\relax
+	         \let\subsectionname\relax
+		\frame{\subsectionpage}}

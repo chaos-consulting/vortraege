@@ -1,0 +1,4 @@
+auth       sufficient    pam_pkcs11.so nullok try_first_pass
+@include common-auth
+auth optional pam_gnome_keyring.so
+
