@@ -1,0 +1,999 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/solarized-dark.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>C++</h1>
+				</section>
+				<section>
+					<h2>Geschichte</h2>
+					<p>
+						1979: Erste Implementierung von <q>C with Classes</q>
+					</p>
+					<p>
+						1985: <q>The C++ Programming Language, 1st edition</q>
+					</p>
+					<p>
+						1998: C++98 (ISO/IEC 14882:1998)
+					</p>
+					<p>
+						2003: C++03 (ISO/IEC 14882:2003)
+					</p>
+					<p>
+						2011: C++11 (ISO/IEC 14882:2011)
+					</p>
+					<p>
+						ab 2011: <q>Modern C++</q>
+					</p>
+					<p>
+						(und alle 3j neuer Standard)
+					</p>
+				</section>
+
+				<section data-background="img/BjarneStroustrup.jpg">
+					<h2>Bjarne Stroustrup</h2>
+				</section>
+
+				<section>
+					<h2>Hello World</h2>
+					<pre>
+						<code class="cpp" data-trim>
+#include &lt;iostream&gt;
+
+int main() {
+  std::cout << "Hallo Welt!\n";
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Kompilieren</h2>
+					<p>
+						<img data-src="img/compiler.png" style="background-color: white;" />
+					</p>
+				</section>
+
+				<section>
+					<h2>Gängige Compiler</h2>
+					<p>
+						GCC - GNU Compiler Collection (MinGW für Windows)
+					</p>
+					<p>
+						Clang - C++ Frontend für LLVM
+					</p>
+					<p>
+						(Emscripten: JavaScript-Backend für LLVM, d.h. ermöglicht C++ zu JavaScript)
+					</p>
+					<p>
+						Visual Studio
+					</p>
+				</section>
+
+				<section>
+					<h2>Makefile</h2>
+					<p>
+						Ein Programm besteht aus mehreren Quelldateien/Libraries
+					</p>
+					<p>
+						Diese werden durch die Makefile gebündelt
+					</p>
+					<p>
+						Moderne Variante: CMake
+					</p>
+				</section>
+
+				<section>
+					<h2>CMake</h2>
+					<p>
+						Kann Makefile erzeugen
+					</p>
+					<p>
+						Aber auch Projektdateien für IDEs (z.B. Visual Studio) oder andere Build-Systeme (z.B. Ninja)
+					</p>
+					<p>
+						<pre>
+							<code data-trim>
+cmake_minimum_required (VERSION 2.6)
+project (HelloWorld)
+add_executable(HelloWorld main.cpp)
+							</code>
+						</pre>
+					</p>
+				</section>
+
+				<section>
+					<h2>Externe Libraries</h2>
+					<p>
+						Dynamisch gelinkt
+					</p>
+					<p>
+						Statisch gelinkt
+					</p>
+					<p>
+						<q>Header only</q>
+					</p>
+				</section>
+
+				<section data-background="img/dirty.gif">
+					<h2>Let's get our hands dirty</h2>
+				</section>
+
+				<section>
+					<h2>Scope</h2>
+					<p>
+						Scope = Gültigkeitsbereich
+					</p>
+					<p>
+						Variablen haben einen Scope
+					</p>
+					<p>
+						Funktionen haben eine Scope
+					</p>
+					<p>
+						Namespaces / Klassen / Template-Paramerter u.a. auch
+					</p>
+				</section>
+
+				<section>
+					<h2>Hello World 2</h2>
+					<pre>
+						<code>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+std::string say_hello() {
+  return "Hallo Welt!";
+}
+
+int main() {
+  std::cout << say_hello() << std::endl;
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Hello World 2a</h2>
+					<pre>
+						<code>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+std::string say_hello(); // Prototyp, steht meistens im Header
+
+int main() {
+  std::cout << say_hello() << std::endl;
+}
+
+std::string say_hello() {
+  return "Hallo Welt!";
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Include Guards</h2>
+					<p>
+						Verhindern mehrfaches einbinden
+					</p>
+					<p>
+						<pre>
+							<code>
+#pragma once // KEIN Standard C++
+							</code>
+						</pre>
+					</p>
+					<p>
+						<pre>
+							<code>
+#ifndef _MYHEADER_H_
+#define _MYHEADER_H_
+
+// Eigentlicher Header Inhalt
+
+#endif
+							</code>
+						</pre>
+					</p>
+				</section>
+
+				<section>
+					<h2>Namespaces</h2>
+					<p>
+						Kapseln Funktionen/Klassen/Variablen/...
+					</p>
+					<p>
+						Angenommen <q>Library A</q> und <q>Library B</q> werden eingebunden,
+						beide haben Klasse <q>string</q>.
+					</p>
+					<p>
+						Löst Compiler-Fehler aus, wenn die nicht in einem eigenem Namespace
+						liegen.
+					</p>
+				</section>
+
+				<section>
+					<h2>Namespaces</h2>
+					<p>
+						Im Header:
+						<pre>
+							<code>
+namespace lib_a {
+  // Definition von Klasse string
+}
+							</code>
+						</pre>
+					</p>
+				</section>
+
+				<section>
+					<h2>Namespaces</h2>
+					<p>
+						Zugriff ausserhalb des Namespace-Scope:
+						<pre>
+							<code>
+lib_a::string var;
+							</code>
+						</pre>
+					</p>
+				</section>
+
+				<section>
+					<h2>Namespaces</h2>
+					<p>
+						<pre>
+							<code>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include "lib_a_string.h"
+
+using namespace std;
+
+string say_hello(); // Prototyp, steht meistens im Header
+
+int main() {
+  lib_a::string var;
+  cout << say_hello() << endl;
+}
+
+string say_hello() { return "Hallo Welt!"; }
+							</code>
+						</pre>
+					</p>
+				</section>
+
+				<section>
+					<h2>Variablen</h2>
+					<p>
+						<pre>
+							<code>
+int zahl; // Achtung: Ohne definierten Anfangswert!!!
+int i = 0; // Variablentyp Variablename evtl. Zuweisung
+int &amp;j = i; // Referenz auf i
+int *k = &amp;i; // Pointer auf i
+							</code>
+						</pre>
+					</p>
+
+				</section>
+
+				<section>
+					<h2>Datentypen</h2>
+					<p>
+						Unbestimmt: void
+					</p>
+					<p>
+						Boolean: bool
+					</p>
+					<p>
+						Ganzzahlige: char, short, int, long, long long, jeweils signed und
+						unsigned
+					</p>
+					<p>
+						Gleitkomma: float, double, long double
+					</p>
+					<p>
+						Weiterhin: Klassen, Struct, Enumerations, Unions
+					</p>
+					<p>
+						Man kann auch eigene definieren mit typedef bzw. using
+					</p>
+				</section>
+
+				<section>
+					<h2>Eigene Datentypen</h2>
+					<p>
+						<pre>
+							<code class="cpp">
+  using int_pointer = int *;
+  int_pointer p_var = &amp;i;
+							</code>
+						</pre>
+					</p>
+				</section>
+
+				<section>
+					<h2>NULL vs nullptr</h2>
+					<pre>
+						<code>
+#define NULL 0
+
+void mache_was(int *pi);
+void mache_was(int i);
+
+int main() {
+  int *pi = NULL;
+  mache_was(pi); // Falsche Funktion wird aufgerufen
+
+  int *pj = nullptr;
+  mache_was(pj); // Richtige Funktion wird aufgerufen
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Automatische Datentypen</h2>
+					<p>
+						Datentyp kann auch dynamisch vom Kompiler zugewiesen werden
+					</p>
+					<p>
+						<pre>
+							<code class="cpp">
+auto p_var = &amp;i;
+							</code>
+						</pre>
+					</p>
+				</section>
+
+				<section>
+					<h2>Datentypen konvertieren</h2>
+					<p>
+						Datentypen sollten schon passen
+					</p>
+					<p>
+						<pre>
+							<code class="cpp">
+short s = 5;
+long l = static_cast&lt;long&gt;(s);
+							</code>
+						</pre>
+					</p>
+				</section>
+
+				<section>
+					<h2>Casten</h2>
+					<p>
+						static_cast: Benutzt implizite bzw. Benutzer-definierte Umwandlungen
+					</p>
+					<p>
+						dynamic_cast: Konvertiert Pointer/Referenzen von Klassen innerhalb
+						der Vererbungshierarchie
+					</p>
+					<p>
+						reinterpret_cast: Reinterpretiert den unterliegenden Datentypen
+					</p>
+					<p>
+						const_cast: const entfernen/hinzufügen
+					</p>
+				</section>
+
+				<section>
+					<h2>Funktionen</h2>
+					<pre>
+						<code>
+#include &lt;iostream&gt;
+#define ALLES_OK 1
+
+int addieren(int &amp;ergebnis, int lhs, int rhs) {
+  ergebnis = lhs + rhs;
+  return ALLES_OK;
+}
+
+int main() {
+  int ergebnis;
+  if (addieren(ergebnis, 23, 19) == ALLES_OK) {
+    std::cout << "Ergebnis: " << ergebnis << std::endl;
+  }
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Exceptions</h2>
+					<pre>
+						<code>
+int addieren(int lhs, int rhs) {
+  if (lhs == rhs) {
+    throw std::runtime_error("besser multiplizieren");
+  }
+  return lhs + rhs;
+}
+
+int main() {
+  try {
+    int ergebnis = addieren(42, 42);
+  } catch (const std::exception &amp;e) {
+    std::cout << "Fehler: " << e.what() << std::endl;
+  }
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Spezielle Funktionen</h2>
+					<p>
+						constexpr: Auswertung beim kompilieren
+					</p>
+					<p>
+						inline: Compiler versucht sie in den Code einzubauen
+					</p>
+					<pre>
+						<code>
+constexpr int factorial(int n) {
+  return n <= 1? 1 : (n * factorial(n - 1));
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Templates</h2>
+					<pre>
+						<code class="cpp">
+template &lt;typename T&gt;
+T addieren(T lhs, T rhs) {
+  return lhs + rhs;
+}
+
+int main() {
+  int i = addieren(3, 3);
+  float f = addieren(1.0f, 2.0f);
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Variadic Templates</h2>
+					<pre>
+						<code>
+template &lt;typename T&gt;
+T addieren(T rhs) {
+  return rhs;
+}
+
+template &lt;typename T, typename... Ts&gt;
+T addieren(T lhs, Ts... rhs) {
+  return lhs + addieren(rhs...);
+}
+
+int main() {
+  int i = addieren(1, 2, 3, 4, 5);
+  float f = addieren(1.0f, 2.0f, 3.0f);
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Lambdas</h2>
+					<pre>
+						<code class="cpp">
+int main() {
+  int ergebnis, lhs = 3, rhs = 6;
+  auto addieren = [=, &amp;ergebnis](int third) {
+    ergebnis = lhs + rhs + third;
+    return true;
+  };
+  bool alles_ok = addieren(11);
+}
+						</code>
+					</pre>
+				</section>
+
+				<section data-background="img/bored.gif">
+				</section>
+
+				<section>
+					<h2>User-defined literals</h2>
+					<p>
+						<pre>
+							<code class="cpp">
+strecke operator "" _km(int);
+strecke operator "" _m(int);
+
+int main() {
+  strecke weg = 12_km;
+  strecke anderer_weg = 12_km + 300_m;
+}
+							</code>
+						</pre>
+					</p>
+				</section>
+
+				<section>
+					<h2>Enumerations</h2>
+					<p>
+						<pre>
+							<code class="cpp">
+enum class laengen_einheit : short {
+  zentimeter,
+  meter,
+  kilometer = 100
+};
+							</code>
+						</pre>
+					</p>
+				</section>
+
+				<section>
+					<h2>Klassen</h2>
+					<pre>
+						<code class="cpp">
+class strecke {
+  int laenge = 0;
+  laengen_einheit einheit = laengen_einheit::meter;
+
+ public:
+  strecke(int l, laengen_einheit e) : laenge(l), einheit(e) {}
+  strecke(int l) : strecke(l, laengen_einheit::meter) {}
+  ~strecke() {} // Destruktor
+
+  strecke &amp;operator+(const strecke &amp;rhs);
+};
+						</code>
+					</pre>
+					<p>
+						struct: default public, sonst gleich
+					</p>
+				</section>
+
+				<section>
+					<h2>operator overloading</h2>
+					<pre>
+						<code>
+strecke &amp;strecke::operator+(const strecke &amp;rhs) {
+  assert(einheit == rhs.einheit);
+  laenge += rhs.laenge;
+  return *this;
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Klassen instantiieren</h2>
+					<pre>
+						<code class="cpp">
+int main() {
+  strecke weg1(0);
+  strecke weg2 = strecke(8, laengen_einheit::kilometer);
+
+  strecke *weg3 = new strecke(15, laengen_einheit::meter);
+  delete weg3; // Wichtig, sonst memory leak!!!
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Objektmethoden</h2>
+					<pre>
+						<code class="cpp">
+int main() {
+  strecke weg1(0);
+  weg1.laufen();
+
+  strecke *weg2 = new strecke(15, laengen_einheit::meter);
+  weg2->laufen();
+
+  delete weg2;
+
+  weg2->laufen(); // Boom, Speicherverletzung!!!
+}
+						</code>
+					</pre>
+				</section>
+
+				<section data-background="img/ohno.gif">
+					<h1 style="font-size: 100px;">Manuelle Speicher-verwaltung</h1>
+				</section>
+
+				<section data-background="img/scared.gif">
+				</section>
+
+				<section>
+					<h2>Speicherarten</h2>
+					<ol>
+						<li>
+							Programmspeicher: ausführbarer Code
+						</li>
+						<li>
+							Globaler Speicher: für globale Variablen
+						</li>
+						<li>
+							Heap: Dynamischer Speicher
+						</li>
+						<li>
+							Stack: Stapelspeicher, begrenzt, typisch 1MB
+						</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Probleme dyn. Speicher</h2>
+					<p>
+						Es wird belegter Speicher nicht wieder freigegeben
+					</p>
+					<p>
+						Zum Beispiel wenn der Ausführungspfad unvorhergesehen ist (durch Exception)
+					</p>
+					<p>
+						Pointer wird benutzt, nachdem Speicher freigegeben wurde
+					</p>
+				</section>
+
+				<section data-background="img/ooh.gif">
+					<h1 style="font-size: 100px;">Smartpointer</h1>
+				</section>
+
+				<section>
+					<h2>unique_ptr</h2>
+					<p>
+						Gibt allokierten Speicher im Destruktor automatisch frei
+					</p>
+					<p>
+						Kann nicht kopiert werden
+					</p>
+					<pre>
+						<code class="cpp">
+auto int_pointer = std::make_unique&lt;int&gt;(3);
+auto weg = std::make_unique&lt;strecke&gt;(3, laengen_einheit::meter);
+weg->laufen();
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>shared_ptr</h2>
+					<p>
+						Zählt intern, wieviele Objekte den Speicher referenzieren
+					</p>
+					<p>
+						Gibt Speicher erst frei, wenn der Zähler 0 wird
+					</p>
+					<pre>
+						<code class="cpp">
+auto weg1 = std::make_shared&lt;strecke&gt;(3, laengen_einheit::meter);
+auto weg2 = weg1;
+std::cout << weg2.use_count() << std::endl; // ist 2
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h3>Kontrollstrukturen</h3>
+					<pre>
+						<code class="cpp">
+if(condition) {
+  // ...
+} else {
+  // ...
+}
+
+int i = condition
+        ? 1  // condition ist wahr
+        : 2; // condition ist false
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Switch-case</h2>
+					<pre>
+						<code class="cpp">
+switch (condition) {
+  case laengen_einheit::kilometer:
+  case laengen_einheit::meter:
+    // ...
+    break;
+
+  case laengen_einheit::zentimeter:
+    // ...
+    break;
+
+  default:
+    // ...
+    break;
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>While-Schleifen</h2>
+					<pre>
+						<code class="cpp">
+while (condition) {
+  // ...
+}
+
+do {
+  // ...
+} while(condition);
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>For-Schleifen</h2>
+					<pre>
+						<code>
+for(int i = 0; i&lt;10; i++) {
+  // ...
+}
+
+// Range based for loop
+for(const auto &amp;item : items) {
+  // ...
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>STL Container</h2>
+					<h3>sequence containers</h3>
+					<p>
+						array: festes zusammenhängendes Array
+					</p>
+					<p>
+						vector: dynamische zusammenhängendes Array
+					</p>
+					<p>
+						deque: double ended queue
+					</p>
+					<p>
+						list: doppelt verkettete Liste
+					</p>
+				</section>
+
+				<section>
+					<h2>STL Container</h2>
+					<h3>associative containers</h3>
+					<p>
+						set: collection of unique keys, sorted by keys
+					</p>
+					<p>
+						map: collection of key-value pairs, sorted by keys, keys are unique
+					</p>
+					<p>
+						multiset: collection of keys, sorted by keys
+					</p>
+					<p>
+						multimap: collection of key-value pairs, sorted by keys
+					</p>
+					<p>
+						Gibts auch alle noch mal als Hash-Variante (unordered_set usw.)
+					</p>
+				</section>
+
+				<section>
+					<h2>array</h2>
+					<pre>
+						<code>
+#include &lt;array&gt;
+
+int main() {
+  std::array&lt;int, 3&gt; a1{1, 2, 3}; // Initializer list
+  int i = a1.at(0); // Wirft exception wenn index falsch
+  int j = a1[0];
+  a1[2] = 5;
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>vector</h2>
+					<pre>
+						<code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+  std::vector&lt;int&gt; v = {7, 5, 16, 8};
+
+  v.push_back(25); // Add two more integers to vector
+  v.push_back(13);
+
+  for (int n : v) {
+    std::cout << n << '\n';
+  }
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>set</h2>
+					<pre>
+						<code>
+#include &lt;set&gt;
+#include &lt;string&gt;
+
+int main() {
+  std::set&lt;std::string&gt; a;
+  a.insert("cat");
+  a.insert("dog");
+  a.insert("horse");
+
+  a.find("cat");
+	a.count("dog");
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>map</h2>
+					<pre>
+						<code>
+#include &lt;map&gt;
+#include &lt;string&gt;
+
+int main() {
+  std::map&lt;std::string, int&gt; map1;
+  map1["something"] = 69;
+  map1["anything"] = 199;
+  map1["that thing"] = 50;
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Iteratoren</h2>
+					<p>
+						Indirekter Zugriff auf Container
+					</p>
+					<p>
+						STL Algorithmen arbeiten auf Iteratoren
+					</p>
+					<pre>
+						<code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+#include &lt;iterator&gt;
+
+int main() {
+  std::vector&lt;int&gt; v{1, 2, 3};
+  std::fill_n(std::back_inserter(v), 3, -1);
+  for (int n : v)
+    std::cout << n << ' ';
+}
+							</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>STL Algorithmen</h2>
+					<p>
+						Nicht modifizierende: count, find, search, ...
+					</p>
+					<p>
+						Modifizierende: copy, copy_if, fill, reverse, rotate, ...
+					</p>
+					<p>
+						Sortieren: is_sorted, sort, partial_sort, ...
+					</p>
+					<p>
+						Und noch viele andere
+					</p>
+				</section>
+
+				<section>
+					<h2>Copy</h2>
+					<pre>
+						<code>
+#include &lt;algorithm&gt;
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;iterator&gt;
+
+int main() {
+  std::vector&lt;int&gt; from_vector{1, 2, 3};
+
+  std::vector&lt;int&gt; to_vector;
+  std::copy(from_vector.begin(), from_vector.end(),
+    std::back_inserter(to_vector));
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Links</h2>
+					<p>
+						<a href="http://www.boost.org/">Boost C++ Libraries</a>
+					</p>
+					<p>
+						<a href="http://en.cppreference.com/w/">C++ Reference</a>
+					</p>
+					<p>
+						<a href="https://github.com/isocpp/CppCoreGuidelines">C++ Core Guidelines</a>
+					</p>
+					<p>
+						<a href="http://isocpp.org/">Standard C++ Foundation</a>
+					</p>
+				</section>
+
+				<section data-background="img/drunk.gif" data-background-size="50%">
+				</section>
+
+<!--
+				// move semantics
+
+				// boost
+
+				// RegEx
+
+				// Raw Strings
+
+				// atomics
+
+				// Design patterns: GoF, Game Design Patterns
+
+				// link zu cppreference.com
+				// link zu Github CPP guidelines
+			-->
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
