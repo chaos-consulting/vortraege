@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+
+        <style>
+        .reveal section img {
+            /* border: 10px solid #eee; */
+            border: 0px solid #eee;
+            background: rgba(255, 255, 255, 0);
+        }
+        </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>QAC</h1>
+				</section>
+
+                <section>
+                    <img src="img/wat.png">
+                </section>
+
+                <section>
+                    <h2>Question and Answer Compiler</h2>
+                </section>
+
+                <section>
+                    <img src="img/anki_question.png">
+                </section>
+
+                <section>
+                    <img src="img/anki_answer.png">
+                </section>
+
+                <section>
+                    <img src="img/anki_overview.png" height="60%" width="60%">
+                </section>
+
+                <section>
+                    <img src="img/vim_qac.png">
+                </section>
+
+                <section>
+                    <img src="img/workflow.png">
+                </section>
+
+                <section>
+                    <img src="img/qac_github.png">
+                </section>
+
+                <section>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Textformatierungen</li>
+                        <li>Kapitel, Unterkapitel, ... </li>
+                        <li>Listen</li>
+                        <li>Tabellen</li>
+                        <li>Bilder</li>
+                        <li>LaTeX-Formeln</li>
+                        <li>Organisieren in mehrere Dateien</li>
+                        <li>Mehrere Backends: Anki, HTML, ... (your own)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Danke!</h2>
+                    <p>
+                        <a href="https://github.com/jan-alexander/qac">
+                            https://github.com/jan-alexander/qac
+                        </a>
+                    </p>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
