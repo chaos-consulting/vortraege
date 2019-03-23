@@ -8,11 +8,12 @@
 * 2017-11-11: [USBGuard](USBGuard-20171111/USBGuard.pdf)
 * 2018-01-11: [QAC](QAC-20180113/index.html)
 * 2018-01-13: [Google-Hacking](googlehacking-20180113/googlehacking.pdf)
+* 2018-08-30: Borgbackup
 * 2018-mm-dd: Elektromobilität
 * 2019-01-12: Künstliche Intelligenz
 * 2019-02-09: Virtualisierung mit Proxmox
 * 2019-03-09: CPU Overclocking
-* 2019-04-13: 
+* 2019-04-13: Netzwerksimulation mit Packettracker
 * 2019-05-11: Nextcloud
 * 2019-06-08: Fichtenfunk Community Conference v4
 * 2019-07-13: Veracrypt
