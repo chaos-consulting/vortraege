@@ -19,6 +19,6 @@
 * 2019-07-13: Veracrypt
 * 2019-08-10: 
 * 2019-09-14: 
-* 2019-10-12: 
+* 2019-10-12: OpenStreetMap Mappingworkshop
 * 2019-11-09: Routing on Linux
 * 2020-01-11:
