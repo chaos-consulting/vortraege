@@ -23,17 +23,22 @@
 * 2019-11-09: Routing on Linux
 * 2020-01-11:
 * 2020-02-05: 5 Jahre Chaos Consulting
+* 2020-03-19: 
 * 2020-03-26: Astronomie / Sterne Beobachten
 * 2020-04-02: Openvpn mit PFsense
 * 2020-04-09: Routingworkshop Teil 2
 * 2020-04-11: Stadtgeschichte Iserlohn
 * 2020-04-16: Schrauben & Werkzeug
+* 2020-04-23: 
 * 2020-04-30: SSH
 * 2020-05-07: BGP Insecurities
 * 2020-05-09: GNU-Cash
-* 2020-0m-dd:
+* 2020-05-21: -
+* 2020-05-28:
+* 2020-06-04:
 * 2020-06-11: VLANs
 * 2020-06-13: Videoschnitt unter Linux
+* 2020-06-18:
 * 2020-06-25: Schottland, ein Reisebericht
 * 2020-07-02: Vom Holz zum Löffel
 * 2020-07-09: Gleitschirmfliegen
