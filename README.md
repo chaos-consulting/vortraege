@@ -29,13 +29,14 @@
 * 2020-04-09: Routingworkshop Teil 2
 * 2020-04-11: Stadtgeschichte Iserlohn
 * 2020-04-16: Schrauben & Werkzeug
-* 2020-04-23: 
+* 2020-04-23: OBS
 * 2020-04-30: SSH
 * 2020-05-07: BGP Insecurities
 * 2020-05-09: GNU-Cash
+* 2020-05-14: Apalachian Trail
 * 2020-05-21: -
 * 2020-05-28:
-* 2020-06-04:
+* 2020-06-04: Veracrypt Mounter
 * 2020-06-11: VLANs
 * 2020-06-13: Videoschnitt unter Linux
 * 2020-06-18:
@@ -44,7 +45,3 @@
 * 2020-07-09: Gleitschirmfliegen
 * 2020-07-11: Decompiling
 * 2020-07-16: Satellitennavigation
-
-* OBS
-* Apalachian Trail
-* Veracrypt Mounter
