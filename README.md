@@ -22,3 +22,13 @@
 * 2019-10-12: OpenStreetMap Mappingworkshop
 * 2019-11-09: Routing on Linux
 * 2020-01-11:
+* 2020-0m-dd:
+* 2020-05-09: GNU-Cash
+* 2020-0m-dd:
+* 2020-0m-11: VLANs
+* 2020-06-13: Videoschnitt unter Linux
+* 2020-0m-dd:
+* 2020-0m-dd:
+* 2020-07-09: Gleitschirmfliegen
+* 2020-07-11: Decompiling
+* 2020-07-16: Satellitennavigation
