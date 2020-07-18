@@ -39,7 +39,7 @@
 * 2020-06-04: Veracrypt Mounter
 * 2020-06-11: VLANs
 * 2020-06-13: Videoschnitt unter Linux
-* 2020-06-18:
+* 2020-06-18: x86 eine CPU Geschichte
 * 2020-06-25: Schottland, ein Reisebericht
 * 2020-07-02: Vom Holz zum Löffel
 * 2020-07-09: Gleitschirmfliegen
