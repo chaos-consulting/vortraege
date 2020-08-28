@@ -48,3 +48,5 @@
 * 2020-07-23: Homelab - Das Rechenzentrum für daheim
 * 2020-07-30: Atlantikwall
 * 2020-08-13: Lat/Lng/er - Arduino GPS Teil 1, Hardware
+* 2020-08-20: Leitungsgebundene Internetzugangstechnologien, DSL, VDSL, Cable, Fiber, ...
+* 2020-08-27: Lat/Lng/er - Arduino GPS Teil 2, Software
