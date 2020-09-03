@@ -50,3 +50,4 @@
 * 2020-08-13: Lat/Lng/er - Arduino GPS Teil 1, Hardware
 * 2020-08-20: Leitungsgebundene Internetzugangstechnologien, DSL, VDSL, Cable, Fiber, ...
 * 2020-08-27: Lat/Lng/er - Arduino GPS Teil 2, Software
+* 2020-09-03: S3 für Zuhause (MinIO)
