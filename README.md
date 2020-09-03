@@ -35,7 +35,7 @@
 * 2020-05-09: GNU-Cash
 * 2020-05-14: Apalachian Trail
 * 2020-05-21: -
-* 2020-05-28:
+* 2020-05-28: Automatisieren mit Ansible
 * 2020-06-04: Veracrypt Mounter
 * 2020-06-11: VLANs
 * 2020-06-13: Videoschnitt unter Linux
