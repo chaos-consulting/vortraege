@@ -51,3 +51,7 @@
 * 2020-08-20: Leitungsgebundene Internetzugangstechnologien, DSL, VDSL, Cable, Fiber, ...
 * 2020-08-27: Lat/Lng/er - Arduino GPS Teil 2, Software
 * 2020-09-03: S3 für Zuhause (MinIO)
+* 2020-09-10: SSL
+* 2020-09-17: Kunststoffrecycling
+* 2020-09-24: Webtools für admins
+* 2020-10-01: OpenHAB
