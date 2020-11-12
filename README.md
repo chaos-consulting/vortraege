@@ -55,3 +55,10 @@
 * 2020-09-17: Kunststoffrecycling
 * 2020-09-24: Webtools für admins
 * 2020-10-01: OpenHAB
+* 2020-10-08: PoE
+* 2020-10-10: Grafikbearbeitung mit Linux
+* 2020-10-15: Bahnsicherheit
+* 2020-10-22: 
+* 2020-10-29: 
+* 2020-11-05: NginxRTMP
+* 2020-11-12: Netbox
