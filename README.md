@@ -62,3 +62,5 @@
 * 2020-10-29: 
 * 2020-11-05: NginxRTMP
 * 2020-11-12: Netbox
+* 2020-11-14: DJs Chaosnet
+* 2020-11-19: DXing - Langstrecke im Amateurfunk
