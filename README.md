@@ -64,3 +64,5 @@
 * 2020-11-12: Netbox
 * 2020-11-14: DJs Chaosnet
 * 2020-11-19: DXing - Langstrecke im Amateurfunk
+* ...
+* 2021-01-07: Empfängerschaltungen im Amateurfunk
