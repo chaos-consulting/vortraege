@@ -53,7 +53,7 @@
 * 2020-09-03: S3 für Zuhause (MinIO)
 * 2020-09-10: SSL
 * 2020-09-17: Kunststoffrecycling
-* 2020-09-24: Webtools für admins
+* 2020-09-24: Webtools für Admins
 * 2020-10-01: OpenHAB
 * 2020-10-08: PoE
 * 2020-10-10: Grafikbearbeitung mit Linux
@@ -64,5 +64,11 @@
 * 2020-11-12: Netbox
 * 2020-11-14: DJs Chaosnet
 * 2020-11-19: DXing - Langstrecke im Amateurfunk
-* ...
+* 2020-11-26:
+* 2020-12-03: DMR - Digitale Sprachübertragung im Amateurfunk
+* 2020-12-12: A reasonably secure workstation
+* 2020-12-18: Brandschutz Hilfeleistung und Katastrophenschutz
 * 2021-01-07: Empfängerschaltungen im Amateurfunk
+* 2021-01-09: Behind adsb.chaos-consulting.de
+* 2021-01-14: OpenWRT
+* 2021-01-21:
