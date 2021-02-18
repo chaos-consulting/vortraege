@@ -74,3 +74,6 @@
 * 2021-01-21: LEDs
 * 2021-01-27: [Kourou](https://github.com/jjx-/kourou)
 * 2021-02-04: Irland - Ein kleiner Reisebericht
+* 2021-02-11: Amateurfunk Antennen im Eigenbau
+* 2021-02-13: Eine Einführung ins Löten und kleine Bauteilkunde
+* 2021-02-18: Pakte kompilieren und per PPA verteilen
