@@ -77,3 +77,8 @@
 * 2021-02-11: Amateurfunk Antennen im Eigenbau
 * 2021-02-13: Eine Einführung ins Löten und kleine Bauteilkunde
 * 2021-02-18: Pakte kompilieren und per PPA verteilen
+* 2021-02-25: Glasfaser - Fiber statt Cyber
+* 2021-03-04: Redundanz auf Layer 2 und 3
+* 2021-03-11:
+* 2021-03-13: Elektroinstallation
+* 2021-03-18:
