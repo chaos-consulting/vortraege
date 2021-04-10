@@ -82,3 +82,7 @@
 * 2021-03-11:
 * 2021-03-13: Elektroinstallation
 * 2021-03-18:
+* 2021-03-25: Gitea - Git Server zum selber hosten
+* 2021-04-01: Wiederstände - Elektrische Bauteile
+* 2021-04-08: Librespeed - Speedtest zum selbst hosten
+* 2021-04-10: Hyperconverged Infrastructure mit ProxmoxVE, Ceph und PBS
