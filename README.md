@@ -81,7 +81,7 @@
 * 2021-03-04: Redundanz auf Layer 2 und 3
 * 2021-03-11:
 * 2021-03-13: Elektroinstallation
-* 2021-03-18:
+* 2021-03-18: FreeCAD für Holzwerker
 * 2021-03-25: Gitea - Git Server zum selber hosten
 * 2021-04-01: Wiederstände - Elektrische Bauteile
 * 2021-04-08: Librespeed - Speedtest zum selbst hosten
