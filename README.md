@@ -88,4 +88,7 @@
 * 2021-04-10: Hyperconverged Infrastructure mit ProxmoxVE, Ceph und PBS
 * 2021-04-15: ADS-B 2.0 Public Beta Release
 * 2021-04-22: Paketreisen im Internet, How2 reverse engineer ISPs backbone providers and ASes
-* 2021-04-28:
+* 2021-04-29: Das Bienenjahr aus Sicht eines Imkers
+* 2021-05-06: Die Arbeit eines Vehrkehrserfassers
+* 2021-05-08: Audioworkflow - Vom Mic bis ins Linux
+* 2021-05-13:
