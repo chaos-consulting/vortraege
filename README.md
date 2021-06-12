@@ -91,4 +91,13 @@
 * 2021-04-29: Das Bienenjahr aus Sicht eines Imkers
 * 2021-05-06: Die Arbeit eines Vehrkehrserfassers
 * 2021-05-08: Audioworkflow - Vom Mic bis ins Linux
-* 2021-05-13:
+* 2021-05-13: ADS-B 2.0 Beta 2 Vorstellung
+* 2021-05-20: Fachwerkhaus
+* 2021-05-27: Panoramabilder
+* 2021-06-03: Wifi Lücken
+* 2021-06-10: Bookstackapp
+* 2021-06-12: Remote Fichtenfunk Community Conference - 7 Jahre Fichtenfunk ein Rückblick
+* 2021-06-12: Remote Fichtenfunk Community Conference - Building a World / Workadventure
+* 2021-06-12: Remote Fichtenfunk Community Conference - Netzwerkprobleme Analysieren (how 2)
+* 2021-06-12: Remote Fichtenfunk Community Conference - Der Große Key und Crypto Roundup
+* 2021-06-12: Remote Fichtenfunk Community Conference - ADS-B und AIS mit SDR
