@@ -101,3 +101,9 @@
 * 2021-06-12: Remote Fichtenfunk Community Conference - Netzwerkprobleme Analysieren (how 2)
 * 2021-06-12: Remote Fichtenfunk Community Conference - Der Große Key und Crypto Roundup
 * 2021-06-12: Remote Fichtenfunk Community Conference - ADS-B und AIS mit SDR
+* 2021-06-17:
+* 2021-06-24:
+* 2021-07-01:
+* 2021-07-08: Die etwas anderen CLI Tools
+* 2021-07-10: Sweethome 3d
+* 2021-07-22: Ubports
