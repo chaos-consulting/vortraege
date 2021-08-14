@@ -107,3 +107,7 @@
 * 2021-07-08: Die etwas anderen CLI Tools
 * 2021-07-10: Sweethome 3d
 * 2021-07-22: Ubports
+* 2021-07-29: Gemüseanbau im Gewächshaus
+* 2021-08-05: NAS und mehr - Proxmox, Container, X2go, Jellyfin, ...
+* 2021-08-12: ADS-B 2.2 Release und Hardwarebenchmarks
+* 2021-08-14: Crypto im Alltag
