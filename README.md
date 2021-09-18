@@ -111,3 +111,7 @@
 * 2021-08-05: NAS und mehr - Proxmox, Container, X2go, Jellyfin, ...
 * 2021-08-12: ADS-B 2.2 Release und Hardwarebenchmarks
 * 2021-08-14: Crypto im Alltag
+* 2021-09-09: Akkus und Ladetechnik
+* 2021-09-10: Whisky
+* 2021-09-11: Routing mit VyOS
+* 2021-09-16: Syncthing
