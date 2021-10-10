@@ -115,3 +115,5 @@
 * 2021-09-10: Whisky
 * 2021-09-11: Routing mit VyOS
 * 2021-09-16: Syncthing
+* 2021-09-30: Das Buran Raumfahrtprogramm
+* 2021-09-09: OPNsense
