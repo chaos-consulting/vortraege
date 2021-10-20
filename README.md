@@ -117,7 +117,7 @@
 * 2021-09-16: Syncthing
 * 2021-09-30: Das Buran Raumfahrtprogramm
 * 2021-10-09: OPNsense
-* 2021-10-14:
+* 2021-10-14: ADS-B 2.3 Release
 * 2021-10-21:
 * 2021-10-28:
 * 2021-11-04:
