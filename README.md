@@ -125,3 +125,5 @@
 * 2021-11-13:
 * 2021-11-18:
 * 2021-11-25: Linux Härtung mit SCAP
+* 2021-12-02: EDC für Nerds
+* 2021-12-11: Homeassistant
