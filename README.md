@@ -8,6 +8,7 @@
 * 2017-11-11: [USBGuard](USBGuard-20171111/USBGuard.pdf)
 * 2018-01-11: [QAC](QAC-20180113/index.html)
 * 2018-01-13: [Google-Hacking](googlehacking-20180113/googlehacking.pdf)
+* 2018-01-13: Senkrechter Wurf - Simulation mit LEDs
 * 2018-08-30: Borgbackup
 * 2018-mm-dd: Elektromobilität
 * 2019-01-12: Künstliche Intelligenz
