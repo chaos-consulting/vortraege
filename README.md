@@ -128,3 +128,11 @@
 * 2021-11-25: Linux Härtung mit SCAP
 * 2021-12-02: EDC für Nerds
 * 2021-12-11: Homeassistant
+* 2021-12-16:
+* 2021-12-23:
+* 2021-12-27: ADS-B + AIS - Open data is in the air
+* 2022-01-06: DragonOS
+* 2022-01-08: QubesOS
+* 2022-01-13: 
+* 2022-01-20: ? + Xpra
+* 2022-01-27: LoRaAPRS
