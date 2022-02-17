@@ -134,6 +134,8 @@
 * 2022-01-06: DragonOS
 * 2022-01-08: QubesOS
 * 2022-01-13: 
-* 2022-01-20: ? + Xpra
+* 2022-01-20: Ubuntu auf dem TP Yoga + Xpra
 * 2022-01-27: LoRaAPRS
 * 2022-02-03: NanoVNA
+* 2022-02-12: Wireguard
+* 2022-02-17: Spielen unter Linux
