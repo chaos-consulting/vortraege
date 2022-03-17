@@ -140,3 +140,8 @@
 * 2022-02-04: Whisky
 * 2022-02-12: Wireguard
 * 2022-02-17: Spielen unter Linux
+* 2022-02-24:
+* 2022-03-03:
+* 2022-03-10: Solaranlage Teil 1 - Theorie
+* 2022-03-12: Browser Fingerprinting
+* 
