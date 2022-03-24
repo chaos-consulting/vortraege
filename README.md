@@ -144,4 +144,4 @@
 * 2022-03-03: 2 Faktor Authentifizierung 
 * 2022-03-10: Solaranlage Teil 1 - Theorie
 * 2022-03-12: Browser Fingerprinting
-* 
+* 2022-03-24: Die Amateurfunk Bake OZ7IGY
