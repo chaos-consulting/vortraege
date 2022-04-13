@@ -146,3 +146,7 @@
 * 2022-03-12: Browser Fingerprinting
 * 2022-03-24: Die Amateurfunk Bake OZ7IGY
 * 2022-03-31: tinySA - kleiner aber feiner Spectrum Analyzer
+* 2022-04-01: Über den Whisky - Schwerpunkt Brennereien auf Islay
+* 2022-04-07: Messer Schärfen
+* 2022-04-09: Solaranlage Teil 2 - Der Praktische Aufbau und Inbetriebnahme
+* 2022-04-14:
