@@ -18,13 +18,9 @@
 * 2019-05-11: Nextcloud
 * 2019-06-08: Fichtenfunk Community Conference v4
 * 2019-07-13: Veracrypt
-* 2019-08-10: 
-* 2019-09-14: 
 * 2019-10-12: OpenStreetMap Mappingworkshop
 * 2019-11-09: Routing on Linux
-* 2020-01-11:
 * 2020-02-05: 5 Jahre Chaos Consulting
-* 2020-03-19: 
 * 2020-03-26: Astronomie / Sterne Beobachten
 * 2020-04-02: Openvpn mit PFsense
 * 2020-04-09: Routingworkshop Teil 2
@@ -35,7 +31,6 @@
 * 2020-05-07: BGP Insecurities
 * 2020-05-09: GNU-Cash
 * 2020-05-14: Apalachian Trail
-* 2020-05-21: -
 * 2020-05-28: Automatisieren mit Ansible
 * 2020-06-04: Veracrypt Mounter
 * 2020-06-11: VLANs
@@ -59,13 +54,10 @@
 * 2020-10-08: PoE
 * 2020-10-10: Grafikbearbeitung mit Linux
 * 2020-10-15: Bahnsicherheit
-* 2020-10-22: 
-* 2020-10-29: 
 * 2020-11-05: NginxRTMP
 * 2020-11-12: Netbox
 * 2020-11-14: DJs Chaosnet
 * 2020-11-19: DXing - Langstrecke im Amateurfunk
-* 2020-11-26:
 * 2020-12-03: DMR - Digitale Sprachübertragung im Amateurfunk
 * 2020-12-12: A reasonably secure workstation
 * 2020-12-18: Brandschutz Hilfeleistung und Katastrophenschutz
@@ -80,7 +72,6 @@
 * 2021-02-18: Pakte kompilieren und per PPA verteilen
 * 2021-02-25: Glasfaser - Fiber statt Cyber
 * 2021-03-04: Redundanz auf Layer 2 und 3
-* 2021-03-11:
 * 2021-03-13: Elektroinstallation
 * 2021-03-18: FreeCAD für Holzwerker
 * 2021-03-25: Gitea - Git Server zum selber hosten
@@ -119,28 +110,18 @@
 * 2021-09-30: Das Buran Raumfahrtprogramm
 * 2021-10-09: OPNsense
 * 2021-10-14: ADS-B 2.3 Release
-* 2021-10-21:
-* 2021-10-28:
-* 2021-11-04:
-* 2021-11-11:
-* 2021-11-13:
-* 2021-11-18:
 * 2021-11-25: Linux Härtung mit SCAP
 * 2021-12-02: EDC für Nerds
 * 2021-12-11: Homeassistant
-* 2021-12-16:
-* 2021-12-23:
 * 2021-12-27: ADS-B + AIS - Open data is in the air
 * 2022-01-06: DragonOS
 * 2022-01-08: QubesOS
-* 2022-01-13: 
 * 2022-01-20: Ubuntu auf dem TP Yoga + Xpra
 * 2022-01-27: LoRaAPRS
 * 2022-02-03: NanoVNA
 * 2022-02-04: Whisky
 * 2022-02-12: Wireguard
 * 2022-02-17: Spielen unter Linux
-* 2022-02-24:
 * 2022-03-03: 2 Faktor Authentifizierung 
 * 2022-03-10: Solaranlage Teil 1 - Theorie
 * 2022-03-12: Browser Fingerprinting
