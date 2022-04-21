@@ -149,4 +149,6 @@
 * 2022-04-01: Über den Whisky - Schwerpunkt Brennereien auf Islay
 * 2022-04-07: Messer Schärfen
 * 2022-04-09: Solaranlage Teil 2 - Der Praktische Aufbau und Inbetriebnahme
-* 2022-04-14:
+* 2022-04-14: S0 Zähler mit dem RaspberryPi
+* 2022-04-17: Antennen Vermessen
+* 2022-04-21: SWR Messgeräte
