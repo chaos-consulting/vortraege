@@ -133,3 +133,9 @@
 * 2022-04-14: S0 Zähler mit dem RaspberryPi
 * 2022-04-17: Antennen Vermessen
 * 2022-04-21: SWR Messgeräte
+* 2022-04-28: Freifunk - Public Beta 2022
+* 2022-05-05:
+* 2022-05-12:
+* 2022-05-14:
+* 2022-05-19:
+* 2022.05.26:
