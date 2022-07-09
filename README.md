@@ -119,7 +119,7 @@
 * 2022-01-20: Ubuntu auf dem TP Yoga + Xpra
 * 2022-01-27: LoRaAPRS
 * 2022-02-03: NanoVNA
-* 2022-02-04: Whisky
+* 2022-02-04: Über den Whisky Teil 7
 * 2022-02-12: Wireguard
 * 2022-02-17: Spielen unter Linux
 * 2022-03-03: 2 Faktor Authentifizierung 
@@ -127,15 +127,25 @@
 * 2022-03-12: Browser Fingerprinting
 * 2022-03-24: Die Amateurfunk Bake OZ7IGY
 * 2022-03-31: tinySA - kleiner aber feiner Spectrum Analyzer
-* 2022-04-01: Über den Whisky - Schwerpunkt Brennereien auf Islay
+* 2022-04-01: Über den Whisky Teil 8 - Schwerpunkt Brennereien auf Islay
 * 2022-04-07: Messer Schärfen
 * 2022-04-09: Solaranlage Teil 2 - Der Praktische Aufbau und Inbetriebnahme
 * 2022-04-14: S0 Zähler mit dem RaspberryPi
 * 2022-04-17: Antennen Vermessen
 * 2022-04-21: SWR Messgeräte
 * 2022-04-28: Freifunk - Public Beta 2022
-* 2022-05-05:
-* 2022-05-12:
-* 2022-05-14:
-* 2022-05-19:
+* 2022-05-05: Openssh mit FIDO
+* 2022-05-12: TinyGS
+* 2022-05-14: Alternative Webfrontends - individous, nitter, bibliogram, libreddit, ...
+* 2022-05-19: 
 * 2022.05.26:
+* 2022-06-02:
+* 2022-06-09:
+* 2022-06-10: Über den Whisky Teil 9 - Schwerpunkt Portweinfasslagerung
+* 2022-06-11: MicroK8S
+* 2022-06-16:
+* 2022-06-23: Freifunk - Public Beta 2022 lessons learned und wo stehen wir
+* 2022-06-30: - 
+* 2022-07-07: - 
+* 2022-06-09: - 
+
