@@ -137,7 +137,7 @@
 * 2022-05-05: Openssh mit FIDO
 * 2022-05-12: TinyGS
 * 2022-05-14: Alternative Webfrontends - individous, nitter, bibliogram, libreddit, ...
-* 2022-05-19: 
+* 2022-05-19: Linux Dateisystemberechtigungen
 * 2022.05.26:
 * 2022-06-02:
 * 2022-06-09:
