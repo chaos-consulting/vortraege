@@ -139,7 +139,7 @@
 * 2022-05-14: Alternative Webfrontends - individous, nitter, bibliogram, libreddit, ...
 * 2022-05-19: Linux Dateisystemberechtigungen
 * 2022.05.26:
-* 2022-06-02:
+* 2022-06-02: Nicht wiederholbare Eisenbahnfotos
 * 2022-06-09:
 * 2022-06-10: Über den Whisky Teil 9 - Schwerpunkt Portweinfasslagerung
 * 2022-06-11: MicroK8S
